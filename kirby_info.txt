@@ -1,0 +1,2 @@
+Notes:
+- Fix layout so it fits more with portfolio site

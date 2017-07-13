@@ -1,0 +1,667 @@
+
+.page-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1.33em;
+
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Verdana,Geneva,sans-serif; 
+  color: #000;
+}
+
+/*
+* {
+	border: 1px dashed blue;
+}
+*/
+
+/* HEADER */
+
+.menu-toggle{
+	display: none;
+}
+
+#header{
+	background-color: #BE004A;
+	padding: 0 0 3.2em 0;
+}
+
+header img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+a, a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+
+#myname{
+	font-weight: bold;
+}
+
+#position{
+	font-size: 0.78em;
+}
+
+#main-menu{
+	float: right;
+	width: 66.5%;
+}
+
+#main-menu ul{
+  padding: 0;
+  margin: 2.28em 0;
+  list-style: none;  
+  border-top:3px dashed #5fdce4;
+  border-bottom:3px dashed #5fdce4;
+}
+
+#main-menu a:hover{
+	color: white;
+}
+
+#main-menu li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 1em 1.4em;
+
+}
+
+#main-menu li:first-child {
+  padding-left: 1.1em;
+}
+#main-menu li:last-child {
+  padding-right: 1.4em;
+}
+
+/* BANNER */
+
+#banner{
+	display: block;
+}
+	
+	
+div.banner-img{
+	background-color:  #5fdce4;
+}
+
+
+/* MAIN */
+#main {
+	background-color: pink;
+	padding-bottom: 2em;
+	width: 100%;
+}
+
+h2{
+	margin: 0;
+	padding: 1em 0;
+}
+
+/*** KIRBY ANIMATION ***/
+.window {
+	margin: 0 auto;
+    border: 2px solid black;
+	background-color: yellow;
+	height: 350px;
+	width: 950px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.timeDisplay{
+	float: left;
+	padding: 1em;
+	color: white;
+}
+
+#msg{
+	color: white;
+	text-align: center;
+	z-index: 10000;
+	width: 700px;
+	background-color: rgba(0,0, 0, 0.5);
+	border: 3px solid pink;
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'Iceland', cursive;
+}
+
+/*** MORNING KIRBY ***/
+
+#kirby img{
+	width: 200px;
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 100;
+	
+	-webkit-animation-name: squash;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-out;
+	
+	animation-name: squash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+	
+	}
+
+	#stillcloud1{
+		position: absolute;
+		left: 40%;
+		width: 150px;
+	}
+	
+	#stillcloud2{
+		position: absolute;
+		left: 80%;
+		bottom: 60%;
+		width: 100px;
+	}
+	
+	
+	.cloud{
+		width: 50px;
+		position: absolute;
+		left: -50px;
+		z-index: 51;
+	
+	}
+	
+	#cloud1{
+		animation: float 20s infinite;
+	    -webkit-animation-timing-function: linear; 
+        animation-timing-function: linear;
+		bottom: 50%;
+		-webkit-animation-delay: 10s; /* Safari 4.0 - 8.0 */
+        animation-delay: 10s;
+	}
+	
+	#cloud2{
+		animation: float 20s infinite;
+		-webkit-animation-timing-function: linear; 
+         animation-timing-function: linear;
+	}
+
+
+/*** AFTERNOON KIRBY ***/
+
+#kirby_star img{
+	width: 50px;
+	position: absolute;
+	bottom: 10%;
+	left: 100%;
+	z-index: 81;
+	animation: starH 10s infinite, starV 10s infinite; 
+	}
+	
+
+.star{
+	animation: twinkle 5s infinite;
+	}
+	
+
+#lstar{
+	width: 30px;
+	position: absolute;
+	left: 80%;
+	z-index: 1000;
+}
+
+#mstar{
+	width: 25px;
+	position: absolute;
+	left: 35%;
+	top: 10%;
+	z-index: 1000;
+}
+
+#sstar{
+	width: 20px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	z-index: 1000;
+}
+	
+/*** NIGHT KIRBY ***/
+
+#kirby_sleep img{
+	width: 200px;
+	position: absolute;
+	bottom: 25%;
+	left: 5%;
+	z-index: 100;
+}
+
+
+/** BACKGROUNDS **/
+
+#grass img{
+	width: 100%;
+	position: absolute;
+	bottom: -20%;
+	left: 0;
+	z-index: 90;
+}
+
+#starrynight img{
+	position: absolute;
+	bottom: 40%;
+	left: 20%;
+	z-index: 80;
+}
+
+
+#sun{
+	background-color: yellow;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	z-index: 100;
+	position: absolute;
+	left: 15%;
+	bottom: 70%;
+	z-index: 50;
+}
+
+#moon{
+	background-color: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	z-index: 100;
+	position: absolute;
+	left: 30%;	
+	bottom: 70%;
+	z-index: 50;
+}
+
+/***** ANIMATION ****/
+
+/* KIRBY SQUISH ANIMATION */
+
+/*// By Tyson Cadenhead. http://www.tysoncadenhead.com/blog/squash-stretch-and-bounce-with-css3-animations#.WE7pn9UrKpo. Accessed 05/12/2016 */
+
+@-moz-keyframes squash {
+   from { left: 100px; bottom: 300px; height: 150px; }
+    10% { left: 150px; bottom: 0px; height: 50px; }
+    20% { left: 200px; bottom: 250px; height: 140px; }
+    30% { left: 250px; bottom: 0px; height: 60px; }
+    40% { left: 300px; bottom: 200px; height: 130px; }
+    50% { left: 350px; bottom: 0px; height: 70px; }
+    60% { left: 400px; bottom: 150px; height: 120px; }
+    70% { left: 450px; bottom: 0px; height: 80px; }
+    80% { left: 500px; bottom: 100px; height: 110px; }
+    90% { left: 550px; bottom: 0px; height: 90px; }
+    100% { left: 600px; bottom: 50px; height: 100px; }
+}
+
+
+
+@-webkit-keyframes squash {
+   from { left: 100px; bottom: 300px; height: 150px; }
+    10% { left: 150px; bottom: 0px; height: 50px; }
+    20% { left: 200px; bottom: 250px; height: 140px; }
+    30% { left: 250px; bottom: 0px; height: 60px; }
+    40% { left: 300px; bottom: 200px; height: 130px; }
+    50% { left: 350px; bottom: 0px; height: 70px; }
+    60% { left: 400px; bottom: 150px; height: 120px; }
+    70% { left: 450px; bottom: 0px; height: 80px; }
+    80% { left: 500px; bottom: 100px; height: 110px; }
+    90% { left: 550px; bottom: 0px; height: 90px; }
+    100% { left: 600px; bottom: 50px; height: 100px; }
+}
+
+@keyframes squash {
+   from { left: 100px; bottom: 300px; height: 150px; }
+    10% { left: 150px; bottom: 0px; height: 50px; }
+    20% { left: 200px; bottom: 250px; height: 140px; }
+    30% { left: 250px; bottom: 0px; height: 60px; }
+    40% { left: 300px; bottom: 200px; height: 130px; }
+    50% { left: 350px; bottom: 0px; height: 70px; }
+    60% { left: 400px; bottom: 150px; height: 120px; }
+    70% { left: 450px; bottom: 0px; height: 80px; }
+    80% { left: 500px; bottom: 100px; height: 110px; }
+    90% { left: 550px; bottom: 0px; height: 90px; }
+    100% { left: 600px; bottom: 50px; height: 100px; }
+}
+
+/* KIRBY STAR ANIMATIONS */
+
+@-moz-keyframes starH {
+	0% {
+		left: 950px;
+	}
+	50% {
+		left: 475px;
+	}
+	100%{
+		left: -50px;
+	}
+}
+
+
+@-webkit-keyframes starH {
+	0% {
+		left: 950px;
+	}
+	50% {
+		left: 475px;
+	}
+	100%{
+		left: -50px;
+	}
+}
+
+
+@keyframes starH {
+	0% {
+		left: 950px;
+	}
+	50% {
+		left: 475px;
+	}
+	100%{
+		left: -50px;
+	}
+}
+
+
+
+@-moz-keyframes starV {
+	0% {
+		top: 250px;
+	}
+	25% {
+		top: 50px;
+	}
+	50%{
+		top: 300px;
+	}
+	75% {
+		top: 50px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+@-webkit-keyframes starV {
+	0% {
+		top: 250px;
+	}
+	25% {
+		top: 50px;
+	}
+	50%{
+		top: 300px;
+	}
+	75% {
+		top: 50px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+@keyframes starV {
+	0% {
+		top: 250px;
+	}
+	25% {
+		top: 50px;
+	}
+	50%{
+		top: 300px;
+	}
+	75% {
+		top: 50px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+/* STAR TWINKLE */
+
+@-moz-keyframes twinkle{
+	0%,100% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	50%{
+		opacity: 0.5;
+		transform: rotate(180deg);
+	}
+}
+
+@-webkit-keyframes twinkle{
+	0%,100% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	50%{
+		opacity: 0.5;
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes twinkle{
+	0%,100% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	50%{
+		opacity: 0.5;
+		transform: rotate(180deg);
+	}
+}
+
+/*CLOUD FLOAT */
+
+@-moz-keyframes float{
+	0%{
+		transform: translate(0,0);
+	}
+	100%{
+		transform: translate(1000px,0);
+	}
+	}
+
+@-webkit-keyframes float{
+	0%{
+		transform: translate(0,0);
+	}
+	100%{
+		transform: translate(1000px,0);
+	}
+	}
+
+@keyframes float{
+	0%{
+		transform: translate(0,0);
+	}
+	100%{
+		transform: translate(1000px,0);
+	}
+	}
+
+
+/* FOOTER */
+#footer{
+	font-size: 1.33em;
+	clear: both;
+	background-color: #BE004A;
+	color: white;
+	height: 100px;
+}
+
+#footer p{
+	font-family: Arial Narrow,Arial,sans-serif; 
+	padding: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+
+
+
+/*Make images responsive!*/
+
+img {
+	max-width: 100% !important;
+	height: auto;
+}
+
+
+
+@media all and (max-width: 768px){
+	
+	body {
+		font-size: 0.7em;
+	}
+	
+	
+	#header {
+		padding: 0 0 20px 0;
+	}
+	
+	#logo-and-label img{
+	width: 80px;
+	margin-top: 25px;
+	margin-left: 1.4em;
+	}
+	
+	
+	div.banner-img{
+		background-color:  #60aacd;
+	}
+
+	
+	#main-menu ul{
+		width: 91%;
+	}
+	
+	#main-menu li {
+		padding: 15px 16px;
+	}
+	
+
+	
+	.banner-img img{
+		height: 100%;
+	}
+}
+	
+
+
+@media all and (max-width: 600px){
+	
+	div.banner-img{
+		background-color:  #60aacd;
+	}
+
+}
+
+
+
+
+
+@media all and (max-width: 320px){
+	
+	body {
+		font-size: 0.6em;
+	}
+	
+	#logo-and-label{
+	display: inline-block;
+	width: 60%;
+	margin-left: 0;
+	}
+	
+	.window {
+		display:none;
+	
+	}
+	
+
+	.menu-toggle{
+		display: inline-block;
+		float: right;
+		text-transform: uppercase;
+		color: black;
+		font-size: 15px;
+		padding: 5px 16px;
+		margin-top: 35px;
+		border-top:3px dashed #5fdce4;
+		border-bottom:3px dashed #5fdce4;
+	}
+	
+	
+	#main-menu {
+		position: absolute;
+		left: -10000px;
+	}
+	
+	#main-menu.show-small{
+		float: right;
+		position: relative;
+		left: 0;
+	}
+	
+	#main-menu ul{
+		position: relative;
+		left: 35px;
+		top: -10px;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	
+	#main-menu li{
+		display: block;
+		width: 100%;
+		background-color: #02687e;
+	}
+	
+
+	#copyright p{
+		font-size: 14px;
+	}
+	
+}
+
+

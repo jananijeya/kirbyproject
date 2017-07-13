@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="css/project.css" />
+	<script type="text/javascript" src="project.js" ></script>
+	<style>
+
+		@import url('https://fonts.googleapis.com/css?family=Iceland');
+
+		header img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 300px;
+		}
+
+
+	</style>
+  </head>
+  <body>
+  <!-- Change clock to morning: 6am - 12 pm, afternoon: 12pm - 6pm and night: 6pm - 6am  -->
+  <!-- Do morning: 7 AM, afternoon: 3 PM, night: 8PM -->
+			<!--HEADER -->
+			<header id="header">
+				<img src="images/whitelogov2.png" />
+			</header>
+		
+			<!--MAIN-->
+			<main id="main">
+			 <div class="page-wrapper">
+				<h2>Experiment 1: Video Game Transitions & Animations</h2>
+					
+					<h3>Kirby for your Day</h3>
+		
+					<div class="window">	
+
+					<!-- Current Time -->
+					
+						<div class="timeDisplay">
+							<span id="time"> TIME: </span>
+							<span id="hoursOut">00:</span>
+							<span id="minsOut">00:</span>
+							<span id="secsOut">00</span>
+						</div>
+
+					<!--Kirby hopping [MORNING KIRBY]-->
+						<div class="character" id="kirby">
+							<img src="images/kirby.png" alt="Kirby waving at user" />
+						</div>
+						
+								
+						<div class="cloud morning" id="stillcloud1">
+							<img src="images/stillcloud.png" alt="still game cloud" />
+						</div>
+						
+						<div class="cloud morning" id="stillcloud2">
+							<img src="images/stillcloud.png" alt="still game cloud" />
+						</div>
+						
+						<div class="cloud morning" id="cloud1">
+							<img src="images/cloud.png" alt="game cloud" />
+						</div>
+						
+						<div class="cloud morning" id="cloud2">
+							<img src="images/cloud.png" alt="game cloud" />
+						</div>
+					
+					<!--Kirby on star [AFTERNOON KIRBY]-->
+						<div class="character" id="kirby_star">
+							<img src="images/starkirby.png" alt="Kirby flying on a star" />
+						</div>
+					
+					<!--Kirby sleeping [NIGHT KIRBY]-->
+						<div class="character night" id="kirby_sleep">
+							<img src="images/sleepkirby.png" alt="Kirby sleeping" />
+						</div>
+					
+						<div class="star night" id="lstar">
+							<img src="images/star.png" alt="large star" />
+						</div>
+						
+						<div class="star night" id="mstar">
+							<img src="images/star.png" alt="medium star" />
+						</div>
+						
+						<div class="star night" id="sstar">
+							<img src="images/star.png" alt="small star" />
+						</div>
+						
+						<div class="starry night" id="starrynight">
+							<img id="nightstars" src="images/starrynight.png" alt="Starbackground" />
+						</div>
+						
+						
+					<!--Background-->
+						<div class="background" id="grass">
+							<img src="images/grass.png" alt="Grass background" />
+							<div id="msg"></div>
+						</div>
+
+						<div id="sun"></div>
+						<div id="moon"></div>
+					
+					</div> <!--end of window-->
+		
+			 </div> <!--end of page-wrapper-->
+			</main>
+			
+
+			
+			
+			
+			<!--FOOTER-->
+			<footer id="footer">
+				<div class="page-wrapper">
+					<h2 class="hidden">Copyright</h2>
+					<div id="copyright">
+						<p> &copy; Copyright Janani Jeyaraman, 2016.</p>
+					</div>
+				</div> <!--end of page wrapper-->
+			</footer>
+	</body>
+</html>
